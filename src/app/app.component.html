@@ -23,7 +23,14 @@
         </div>
       </ul>
       <p appBasicHighlight>Style me with basic directive!</p>
-      <p appBetterHighlight>Style me with better directive!</p>
+      <!-- <p [appBetterHighlight]="'red'" [defaultColor]="'yellow'">Style me with better directive!</p> -->
+      <p [appBetterHighlight]="'red'" defaultColor="yellow">Style me with better directive!</p> <!-- Can remove the square brackets and 
+                                                                                                      remove the single quotation marks
+                                                                                                      and that is a special case
+                                                                                                      if you are passing down a string.
+                                                                                                      But make sure you won't confuse others, 
+                                                                                                      better if it's clear this is property
+                                                                                                      binding. -->
     </div>
   </div>
 </div>
